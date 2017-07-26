@@ -411,6 +411,7 @@ h3 {
     width: 30px;
     background-image: url(img/icons/facebook.png);
     background-size: contain;
+    background-repeat: no-repeat;
     margin: 4% 4%;
     transition: all 0.3s ease;
 }
@@ -423,6 +424,7 @@ h3 {
     width: 30px;
     background-image: url(img/icons/Instagram.png);
     background-size: contain;
+    background-repeat: no-repeat;
     margin: 4% 4%;
     transition: all 0.3s ease;
 }
@@ -435,6 +437,7 @@ h3 {
     width: 30px;
     background-image: url(img/icons/youtube.png);
     background-size: contain;
+    background-repeat: no-repeat;
     margin: 4% 4%;
     transition: all 0.3s ease;
 }
@@ -583,35 +586,22 @@ h3 {
 @media screen and (max-width: 768px) {
     
     /* Mobile Menu --------- Start */
+
     
     .headImage {
-        height: 500px;
+        width: inherit;
+        height: 100vh;
     }
     
     .biscuitMill_logo {
         display: none;
     }
-
     
     .headButton {
         position: relative;
-        top: 12em;
+        top: 85vh;
     }
     
-    .fbIcon {
-        margin: 3% 2%;
-        float: right;
-    }
-    
-    .instaIcon {
-        margin: 3% 2%;
-        float: right;
-    }
-    
-    .youtubeIcon {
-        margin: 3% 2%;
-        float: right;
-    }
     
     .hidden-desktop {
         display: none;
@@ -636,15 +626,32 @@ h3 {
         border-bottom: 1px solid white;
     }
     
+    
+    
     /* Mobile Menu --------- End */
     
     
     .bmLogo {
         position: absolute;
-        left: 36%;
+        left: 28%;
+    }
+    
+    .socialMedia_container {
+        position: absolute;
+        top: 25%;
+        right: 2%;
+        display: flex;
+        width: 25%;
+        flex-wrap:wrap;
     }
     
     /* Hamburger Menu ---------- Start */ 
+    
+    .mobileFlex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column;
+    }
     
     .hamMenu .activeLink  {
         background-color: 
@@ -671,7 +678,7 @@ h3 {
         position: fixed;
         top: 70px;
         width: 0%;
-        height: 827px;
+        height: 100%;
         background-color: #111;
         opacity: 0.9;
         overflow: hidden;
@@ -695,11 +702,12 @@ h3 {
     .hamMenu p {
         color: white;
         font-family: 'Questrial', sans-serif;
-        width: 80%;
+        width: 90%;
     }
     
     
     .hamMenu h3 {
+        font-size: 2em;
         text-align: center;
         color: white;
         border-top: 1px solid white;
@@ -724,40 +732,34 @@ h3 {
     
     /* Main Mobile Menu --------- Start */
     
+    
+    
     h2 {
-        font-size: 6em;
+        font-size: 350%;
+        margin: 0;
     }
-    
-    .headButton {
-        height: 80px;
-        width: 350px;
-        font-size: 2em;
-        transition: all 0.3s ease;
-    }
-    
-    .headButton:hover {
-        transition: all 0.3s ease;
-        height: 100px;
-        width: 370px;
+
+    .aboutIcon {
+        
     }
     
     .aboutContainer {
-            padding: 0 auto;
-            display: block;
-            width: 550px;
-            height: 410px;
-            background-color: white;
-            margin: 0px 20px 70px 20px;
+        padding: 0 auto;
+        display: block;
+        width: auto;
+        height: 410px;
+        background-color: white;
+        margin: 0px 20px 70px 20px;
 
     }
     
     .aboutContainer h3 {
-        font-size: 3.4em;
+        font-size: 3.2em;
     }
     
     .aboutContainer p {
-        font-size: 1.1em;
-        margin: 0 auto;
+        font-size: 0.9em;
+        margin: 10px;
     }
     
     .about_Icon {
@@ -821,11 +823,11 @@ h3 {
     .contact_topImage {
         position: relative;
         top: 70px;
-        height: 320px
+        height: 220px
     }
     
     .contact_topImage p {
-        font-size: 13em;
+        font-size: 8.5em;
     }
   
     .contact_infoContainer {
@@ -836,7 +838,7 @@ h3 {
     }
 
     .contact_infoText {
-        padding-bottom: 70px;
+        padding: 5px;
         display: block;
         width: 100%;
         float: none;
@@ -850,12 +852,13 @@ h3 {
     } 
     
     .contactForm_container {
+        padding: 10px;
         position: relative;
         top: 70px;
     }
     
     .contactForm_container .contactForm {
-        width: 85%;
+        width: 100%;
     }
     
     .contactForm input {
