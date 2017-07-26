@@ -592,7 +592,7 @@ h3 {
         width: inherit;
         height: 100vh;
     }
-    
+
     .biscuitMill_logo {
         display: none;
     }
@@ -632,8 +632,10 @@ h3 {
     
     
     .bmLogo {
+        margin: 0;
+        padding: 0;
         position: absolute;
-        left: 28%;
+        left: 35vw;
     }
     
     .socialMedia_container {
@@ -647,11 +649,7 @@ h3 {
     
     /* Hamburger Menu ---------- Start */ 
     
-    .mobileFlex {
-        display: flex;
-        flex-wrap: wrap;
-        flex-flow: column;
-    }
+    
     
     .hamMenu .activeLink  {
         background-color: 
