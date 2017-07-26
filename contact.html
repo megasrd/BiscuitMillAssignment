@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head> <title> The Old Biscuit Mill </title> 
+<link href="stylesheet.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+</head>
+    
+    <header>
+        
+        <nav class="desktop_Menu hidden-desktop">
+
+            <ul>
+                <li> <a href="index.html"> HOME </a> </li>
+                <li> <a href="tenants.html"> TENANTS</a> </li>
+                <li class="activeLink"> <a> CONTACT & INFO </a> </li>
+            </ul>
+            
+        </nav>
+        
+        <nav class="mobile_Menu hidden-mobile">
+            
+            <div class="hamMenu_icon" onclick="toggleNav()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            
+            <img class="bmLogo" src="img/biscuitMill.png" width="150px">
+            
+            <div class="fbIcon"></div>
+            <div class="instaIcon"></div>
+            <div class="youtubeIcon"></div>
+            
+        </nav>
+        
+         <div class="hamMenu hidden-mobile"> 
+
+            <nav>
+                <center>
+                
+                    <h3> Navigation </h3>
+
+                    <ul>
+                        
+                        <li> <a href="index.html"> Home </a> </li>
+                        <li> <a href="tenants.html"> Tenants </a> </li>
+                        <li class="activeLink"> <a> Contact & Info </a> </li>
+                    </ul>
+                
+                </center>
+            </nav>
+             
+                <center>
+                        <h3> Sign Up </h3>
+                        
+                        <p> Sign up for our newsletter to get the latest updates and news. Everything from events to the hottest foods. </p>
+                        
+                        
+                        <input class="emailText" type="email" placeholder="Insert Email">
+                        
+                        <input value="SIGN UP!" class="emailButton">
+                        
+             </center>
+             
+             <center>
+                        <h3>Find Us</h3>
+                        
+                        <p>The Old Biscuit Mill 373-375 Albert Road, Woodstock, Cape Town</p>
+                        
+                        
+                        <p>Mail: PO Box 12449, Mill Street, Cape Town, 8010</p>
+                        
+        
+                        
+             </center>
+        
+        </div>
+        
+        
+    </header>
+    
+    <body>  
+        
+        <div class="contact_topImage">
+            <center>
+                <p> Information </p>
+            </center>
+        </div>
+        
+        
+        <div class="contact_infoContainer"> 
+        
+            <div class="contact_infoText">  
+
+                
+
+                <h2> Contact Info </h2>
+                
+                <p><b>The Old Biscuit Mill is open 6 days a week (closed on Sundays and Public Holidays | Restaurant opening hours below). The Neighbourgoods Market is open on Saturday’s 9am – 2pm.</b></p>
+                
+                <p>Please feel free to contact us at The Old Bicscuit Mill, we would love to hear from you. We’d also love to see you – the map will show you where to find us.</p>
+                
+                <p><b>The Old Biscuit Mill 373-375 Albert Road, Woodstock, Cape Town</b></p>
+                
+                 <p>Tel: 021 447 8194 <br><br> Fax: 021 4479120 <br><br> Mail: PO Box 12449, Mill Street, Cape Town, 8010 <br><br> Email: info@theoldbiscuitmill.co.za</p>
+                
+                
+                <p><b>For market related queries please contact Neighbourgoods Market directly:</b></p>
+                
+                <p>Email: info@neighbourgoodsmarket.co.za<br><br>Website: www.neighbourgoodsmarket.co.za</p>
+                
+                <p><b>Retail trading / operating hours:</b></p>
+                
+                <p>Monday – Friday 10:00 – 16:00<br><br>Saturday – 09:00 – 14:00</p>
+                
+                
+                </div>
+            
+            <div id="gMap"></div>
+            </div>
+    
+
+            <div class="contactForm_container">
+                <center>
+                <form class="contactForm">
+                    
+                <h3>Contact Us</h3>
+                
+                    <p>Name</p>
+                    <input type="text" placeholder="Insert Your Name" required >
+                    
+                    <p>Email</p>
+                    <input type="text" placeholder="Insert Your Email Address" required >
+                    
+                    <p> Your Message </p>
+                    
+                    <textarea> </textarea>
+                    
+                    <input class="submitButton" type="submit" value="SEND MESSAGE">
+                    
+                    </center>
+                
+                </form>
+            
+            
+            </div>
+        
+    
+        
+    <script>
+        
+        var hamMenu = document.getElementsByClassName('hamMenu') [0];
+        var hamIcn = document.getElementsByClassName('hamMenu_icon') [0];
+        
+        var toggleBool = false;
+        
+        function toggleNav() {
+            
+            if (toggleBool === false) {
+                OpenNav();
+                
+            }else if (toggleBool == true) {
+                CloseNav();
+            }
+        }
+        
+        function OpenNav() {
+            hamMenu.style.width = "50%";
+            hamIcn.style.transform = "rotate(90deg)";
+            toggleBool = true;
+           
+        }
+        
+        function CloseNav() {
+            hamMenu.style.width = "0.1%";
+            hamIcn.style.transform = "rotate(0deg)";
+            toggleBool = false;
+
+    
+        }
+        
+        function myMap() {
+            var mapCanvas = document.getElementById("gMap");
+            
+            var mapOptions = {
+                center: new google.maps.LatLng(-33.924869, 18.424055),
+                zoom : 16
+            };
+            
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+        }
+        
+    </script>
+        
+        
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTEbhjKwT9egurZrmVk3WZeHQ1_z3-Al4&callback=myMap"></script>
+    </body>
+
+    <footer>
+        
+        <div class="infoContainer"> 
+                
+                <div class="info_column">
+                    <center><h3> Navigation</h3></center>
+                    <h4> <a href="index.html"> Home</a></h4>
+                    <h4> <a href="tenants.html"> Tenants</a></h4>
+                    <h4> <a href="contact.html"> Contact & Info</a></h4>
+                </div>
+                
+                <div class=" socialMedia_column info_column">
+                    <center>
+                        
+                        <h3> Social Media </h3>
+                        
+                        <div class="fbIcon"></div>
+
+                        <div class="instaIcon">
+                        </div>
+
+                        <div class="youtubeIcon"></div>
+                    </center>
+                </div>
+                
+                <div class="info_column">
+                    
+                    <center>
+                        <h3>Find Us</h3>
+                        
+                        <p>The Old Biscuit Mill 373-375 Albert Road, Woodstock, Cape Town</p>
+                        
+                        
+                        <p>Mail: PO Box 12449, Mill Street, Cape Town, 8010</p>
+                        
+                        <input class="findUs_button" type="submit" value="Contact Page">
+                        
+                    </center>
+                    
+                </div>
+            
+                <div class="info_column wide_column ">
+                    <center>
+                        <h3> Sign Up </h3>
+                        
+                        <p> Sign up for our newsletter to get the latest updates and news. Everything from events to the hottest foods. </p>
+                        
+                        
+                        <input class="emailText" type="email" placeholder="Insert Email">
+                        
+                        <input value="SIGN UP!" class="emailButton">
+                        
+                    </center>
+                </div>
+                
+    
+            
+        </div>
+        
+        
+        <div class="bottom"> </div>
+        
+    </footer>
+    
+</html>

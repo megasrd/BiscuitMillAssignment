@@ -1,0 +1,873 @@
+@font-face {
+    font-family: noodle;
+    src: url(fonts/noodle.ttf);
+}
+
+@font-face {
+    font-family: valentine;
+    src: url(fonts/valentine.ttf);
+}
+
+a{
+    text-decoration: none;
+    color: white;   
+}
+
+.hidden-mobile {
+    display: none;
+}
+
+body {
+    margin: 0;
+    background-image: url(img/bgImage.png);
+}
+
+header {
+    display: block;
+}
+
+hr {
+    height: 10px;
+    margin: 10px 0px 50px 0px;
+    background-color: orange;
+}
+
+h1 {
+    font-family: noodle;
+    font-size: 60px;
+    margin: 12px;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid black;
+}
+
+h2 {
+    font-family: noodle;
+    font-size: 60px;
+    color: #333;
+    margin: 10px;
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+    font-family: noodle;
+    font-size: 45px;
+    color: #333;
+}
+
+.desktop_Menu ul {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    background-color: #111;
+}
+
+.desktop_Menu  ul li {
+    border-bottom: 5px solid transparent;
+    display: inline-block;
+    padding: 19px;
+    margin-right: 50px;
+    font-family: 'Questrial', sans-serif;
+    transition: border-bottom 0.1s;
+}
+
+.desktop_Menu  ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.desktop_Menu  ul li:hover {
+    border-bottom: 5px solid orange;
+}
+
+.activeLink {
+    background-color: orange;
+}
+
+.headImage {
+    height: 92vh;
+    background-image: url(img/Head%20Image.jpg);
+    background-size: cover;
+}
+
+.biscuitMill_logo {
+    width: 750px;
+    display: inline-block;
+    margin: 10vh 0vh 10vh 0vh;
+}
+
+.biscuitMill_logo p {
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+
+#bm_Image {
+    position: relative;
+    top: 80px;
+    width: 50%;
+    height: 450px;
+    background-image: url(img/biscuitMill.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.headButton {
+    display: block;
+    border-radius: 100px;
+    border: 3px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 23px;
+    height: 70px;
+    width: 250px;
+    font-family: 'Questrial', sans-serif;
+    transition: background-color 0.3s, border 0.3s, width 0.3s;
+}
+
+.headButton:hover {
+    background-color: orange;
+    border: orange;
+    width: 280px;
+    
+}
+
+.aboutContainer {
+    box-shadow: 1px 1px 10px #888888;
+    overflow: hidden;
+    padding: 0 auto;
+    display: inline-block;
+    border-radius: 5px;
+    width: 350px;
+    height: 430px;
+    background-color: white;
+    margin: 0px 20px 120px 20px;
+}
+
+.aboutContainer h3 {
+    margin: 10px 0px;
+}
+
+.aboutContainer p {
+    width: 75%;
+    margin: 0 auto;
+    font-family: 'Questrial', sans-serif;
+    font-size: 16px;
+    color: #666;
+}
+
+.about_Icon {
+    display: inline-block;
+    width: 40%;
+    height: 130px;
+    margin: 30px 0px 10px 0px;
+}
+
+.foodHover {
+    background-image: url(img/cardImages/food.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.marketHover {
+    background-image: url(img/cardImages/market.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.placesHover {
+    background-image: url(img/cardImages/places.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.aboutImage1 {
+    width: 100%;
+    height: 190px;
+    border-bottom: 11px solid orange;
+    background-image: url(img/localFoods_image.jpg);
+    background-position: center;
+    background-size: 170%;
+   
+}
+
+.aboutImage2 {
+    width: 100%;
+    height: 190px;
+    border-bottom: 11px solid orange;
+    background-image: url(img/markets_image.jpg);
+    background-position: center;
+    background-size: 170%;
+}
+
+.aboutImage3 {
+    width: 100%;
+    height: 190px;
+    border-bottom: 11px solid orange;
+    background-image: url(img/amazingPlaces_image.png);
+    background-position: center;
+    background-size: 170%;
+}
+
+.tenant_topImage {
+    height: 430px;
+    background-image: url(img/tenants_topImage.jpg);
+    border-bottom: 7px solid orange;
+}
+
+.tenant_topImage p {
+    color: white;
+    font-family: valentine;
+    font-size: 340px;
+    display: inline;
+}
+
+.tenantContainer {
+    background-color: white;
+    box-shadow: 1px 1px 10px #888888;
+    border-radius: 3px;
+    overflow: hidden;
+    display: inline-block;
+    width: 18vw;
+    height: 430px;
+    /*margin: 10px 30px;*/
+    margin: 1% 1.5%;
+}
+
+.tenantImage {
+    position: relative;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+    display: inline-block;
+    height: 320px;
+    width: 100%;
+}
+
+.tenantContainer p {
+    color: #333;
+    font-size: 2.5vw;
+    font-family: noodle;
+    margin: 10px 0px;
+
+}
+
+.contact_topImage {
+    height: 450px;
+    background-image: url(img/contact_topImage.jpg);
+    background-size: cover;
+    border-bottom: 10px solid orange;
+}
+
+.contact_topImage p {
+    display: inline;
+    color: white;
+    font-family: valentine;
+    font-size: 320px;
+}
+
+.contact_infoContainer {
+    width: 100%;
+    overflow: hidden;
+    background-color: #555;
+    border-bottom: 10px solid orange;
+}
+
+.contact_infoContainer:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.contact_infoText {
+    float: left;
+    padding-left: 2%;
+    height: 60vh;
+    display: inline-block;
+    width: 43%;
+    background-color: white;
+    font-family: 'Questrial', sans-serif;
+}
+
+#gMap {
+    float: left;
+    height: 60vh;
+    width: 55%;
+    display: inline-block;
+    background-color: darkred;
+}
+
+.contact_infoText p {
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.contact_infoText h2 {
+    margin: 0;
+    border-bottom: 1px solid white;
+}
+
+
+.contactForm_container {
+    background-color: white;
+    padding: 50px;
+    
+}
+
+.contactForm {
+    border: 2px solid #111;
+    width: 30em;
+    background-color: white;
+    padding-bottom: 20px;
+
+}
+
+.contactForm h3 {
+    color: #222;
+    font-size: 69px;
+    border-bottom: 5px solid orange;
+}
+
+.contactForm p {
+    font-family: 'Questrial', sans-serif;
+    font-size: 23px;
+    margin: 10px;
+}
+
+.contactForm input {
+    width: 380px;
+    text-align: center;
+    border: 1px solid black;
+    
+}
+
+.contactForm textarea {
+    width: 380px;
+    height: 50px;
+    border: 1px solid black;
+    transition: height 1s;
+}
+
+.contactForm textarea:focus {
+    height: 250px;
+}
+
+.contactForm .submitButton {
+    margin: 5px;
+    background-color: transparent;
+    border: 1.5px solid #111;
+    display: block;
+    width: 160px;
+    height: 50px;
+    font-family: noodle;
+    font-size: 23px;
+    transition: all 0.3s ease;
+}
+
+.contactForm .submitButton:hover {
+    transition: all 0.3s ease;
+    background-color: orange;
+    border: 1.5px solid orange;
+    color: white;
+    
+}
+
+.bottom {
+    background-color: #111;
+    height: 20px;
+}
+
+/*Footer Section */
+.infoContainer {
+    padding: 10px;
+    background-color: #222;
+}
+
+.infoContainer p {
+    font-family: sans-serif;
+    color: white;
+    
+}
+
+.infoContainer h3 {
+    color: white;
+    margin: 5px;
+}
+
+.infoContainer h4 {
+    color: white;
+    font-family: 'Questrial', sans-serif;
+    font-weight:normal;
+    font-size: 22px;
+    margin: 20px 5px;
+    text-align: left;
+}
+
+.fbIcon {
+    border-radius: 10px;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-image: url(img/icons/facebook.png);
+    background-size: contain;
+    margin: 4% 4%;
+    transition: all 0.3s ease;
+}
+
+
+.instaIcon {
+    border-radius: 10px;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-image: url(img/icons/Instagram.png);
+    background-size: contain;
+    margin: 4% 4%;
+    transition: all 0.3s ease;
+}
+
+
+.youtubeIcon {
+    border-radius: 10px;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-image: url(img/icons/youtube.png);
+    background-size: contain;
+    margin: 4% 4%;
+    transition: all 0.3s ease;
+}
+
+.socialMedia_column div:hover {
+    transition: all 0.3s ease;
+    height: 40px;
+    width: 40px;
+}
+
+.info_column {
+    float: left;
+    display: inline-block;
+    width: 18%;
+    height: 250px;
+    border-right: 1px solid white;
+    margin: 1% 0px 0px 0.5%;
+}
+
+.wide_column {
+    width: 28%;
+}
+
+.info_column p {
+    font-family: 'Questrial', sans-serif;
+    font-size: 14px;
+    width: 80%;
+    
+}
+
+.infoContainer:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.infoContainer .findUs_button {
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.infoContainer .findUs_button:hover {
+    transition: all 0.3s ease;
+    background-color: orange;
+    color: black;
+    border: orange;
+}
+
+.emailText {
+    border: 1px solid white;
+    background-color: transparent;
+    width: 250px;
+    height: 25px;
+    color: white;
+}
+
+.emailButton {
+    height: 25px;
+    width: 70px;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.3s ease;
+}
+
+.emailButton:hover {
+    transition: all 0.2s ease;
+    background-color: orange;
+    color: black;
+    border: 1px solid #ffa600;
+}
+
+/*Footer Section -- End */
+
+/* Tenant Images */ 
+
+.tImage1 {
+    background-image: url(img/tenant_Images/HHUNT-Square-Logo.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 7px solid orange;
+}
+
+.tImage2 {
+    background-image: url(img/tenant_Images/KVD_BiscuitMill.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 7px solid orange;
+}
+
+.tImage3 {
+    background-image: url(img/tenant_Images/wwooo.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 7px solid orange;
+}
+
+.tImage4 {
+    background-image: url(img/tenant_Images/Paintsmiths-560x337.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 7px solid orange;
+}
+
+.tImage5 {
+    background-image: url(img/tenant_Images/saucisenew-560x337.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 7px solid orange;
+}
+
+.tImage6 {
+    background-image: url(img/tenant_Images/plush.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 7px solid orange;
+}
+
+.tImage7 {
+    background-image: url(img/tenant_Images/espresso-lab.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 7px solid orange;
+}
+
+.tImage8 {
+    background-image: url(img/tenant_Images/Untitled-design-1-560x337.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 7px solid orange;
+}
+
+@media screen and (max-width: 768px) {
+    
+    /* Mobile Menu --------- Start */
+    
+    .headImage {
+        height: 500px;
+    }
+    
+    .biscuitMill_logo {
+        display: none;
+    }
+
+    
+    .headButton {
+        position: relative;
+        top: 12em;
+    }
+    
+    .fbIcon {
+        margin: 3% 2%;
+        float: right;
+    }
+    
+    .instaIcon {
+        margin: 3% 2%;
+        float: right;
+    }
+    
+    .youtubeIcon {
+        margin: 3% 2%;
+        float: right;
+    }
+    
+    .hidden-desktop {
+        display: none;
+    }
+    
+    .hidden-mobile {
+        display: block;
+    }
+    
+    .infoContainer {
+        display: none;
+    }
+    
+    .mobile_Menu {
+        z-index: 1000;
+        position: fixed;
+        width: 100%;
+        background-color: #111;
+        height: 70px;
+        margin: 0 auto;
+        overflow: visible;
+        border-bottom: 1px solid white;
+    }
+    
+    /* Mobile Menu --------- End */
+    
+    
+    .bmLogo {
+        position: absolute;
+        left: 36%;
+    }
+    
+    /* Hamburger Menu ---------- Start */ 
+    
+    .hamMenu .activeLink  {
+        background-color: 
+    }
+      
+    
+    .hamMenu_icon {
+        transition: all 0.3s ease;
+        z-index: 1000;
+        margin: 15px;
+        display: inline-block;
+        transform: rotate(0deg);
+    }
+    
+    .hamMenu_icon div {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px;
+    }
+    
+    .hamMenu {
+        transition: all 0.3s ease;
+        position: fixed;
+        top: 70px;
+        width: 0%;
+        height: 827px;
+        background-color: #111;
+        opacity: 0.9;
+        overflow: hidden;
+        z-index: 10000;
+    }
+    
+    .hamMenu ul {
+        text-decoration: none;
+        list-style: none;
+        padding: 0;
+
+    }
+    
+    .hamMenu ul li {
+        padding: 5px;
+        margin-bottom: 20px;
+        font-family: 'Questrial', sans-serif;
+        font-size: 25px;
+    }
+    
+    .hamMenu p {
+        color: white;
+        font-family: 'Questrial', sans-serif;
+        width: 80%;
+    }
+    
+    
+    .hamMenu h3 {
+        text-align: center;
+        color: white;
+        border-top: 1px solid white;
+        padding-top: 10px;
+    }
+    
+    .emailText {
+        display: block;
+        width: 80%;
+        margin: 10px;
+    }
+    
+    .emailButton {
+        margin: 10px;
+    }
+    
+    
+    
+    
+    /* Hamburger Menu ---------- End */
+    
+    
+    /* Main Mobile Menu --------- Start */
+    
+    h2 {
+        font-size: 6em;
+    }
+    
+    .headButton {
+        height: 80px;
+        width: 350px;
+        font-size: 2em;
+        transition: all 0.3s ease;
+    }
+    
+    .headButton:hover {
+        transition: all 0.3s ease;
+        height: 100px;
+        width: 370px;
+    }
+    
+    .aboutContainer {
+            padding: 0 auto;
+            display: block;
+            width: 550px;
+            height: 410px;
+            background-color: white;
+            margin: 0px 20px 70px 20px;
+
+    }
+    
+    .aboutContainer h3 {
+        font-size: 3.4em;
+    }
+    
+    .aboutContainer p {
+        font-size: 1.1em;
+        margin: 0 auto;
+    }
+    
+    .about_Icon {
+        margin: 2.5% 1%;
+        width: 25%;
+        height: 80%;
+    }
+    
+    /* Main Mobile Menu --------- End */
+    
+    /* Tenants Mobile ----------- Start */
+    
+    .tenant_topImage {
+        height: 330px;
+        background-image: url(img/tenants_topImage.jpg);
+        border-bottom: 7px solid orange;
+    }
+
+    .tenant_topImage p {
+        color: white;
+        font-family: valentine;
+        font-size: 250px;
+        display: inline;
+    }
+
+    .tenantContainer {
+        background-color: white;
+        box-shadow: 1px 1px 10px #888888;
+        border-radius: 3px;
+        overflow: hidden;
+        display: inline-block;
+        width: 40vw;
+        height: 430px;
+        /*margin: 10px 30px;*/
+        margin: 1% 0.5%;
+    }
+
+    .tenantImage {
+        position: relative;
+        z-index: 1;
+        left: 0px;
+        top: 0px;
+        display: inline-block;
+        height: 350px;
+        width: 100%;
+    }
+
+    .tenantContainer p {
+        color: #333;
+        font-size: 5vw;
+        font-family: noodle;
+        margin: 10px 0px;
+
+    }
+    
+    /* Tenants Mobile ----------- End */
+    
+    
+    /* Contact & Info Mobile --------- Start */ 
+    
+    .contact_topImage {
+        position: relative;
+        top: 70px;
+        height: 320px
+    }
+    
+    .contact_topImage p {
+        font-size: 13em;
+    }
+  
+    .contact_infoContainer {
+        position: relative;
+        top: 70px;
+        text-align: center;
+        
+    }
+
+    .contact_infoText {
+        padding-bottom: 70px;
+        display: block;
+        width: 100%;
+        float: none;
+    }
+
+    #gMap {
+        height: 350px;
+        float: none;
+        display: block;
+        width: 100%;
+    } 
+    
+    .contactForm_container {
+        position: relative;
+        top: 70px;
+    }
+    
+    .contactForm_container .contactForm {
+        width: 85%;
+    }
+    
+    .contactForm input {
+        width: 85%;
+    }
+    
+    .contactForm textarea {
+        width: 85%;
+    }
+    
+    
+    /* Contact & Info Mobile --------- End */ 
+    
+}
+

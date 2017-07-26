@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head> <title> The Old Biscuit Mill </title> 
+<link href="stylesheet.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+</head>
+    
+    <header>
+        
+        <nav class="desktop_Menu hidden-desktop">
+
+            <ul>
+                <li class="activeLink"> <a> HOME </a> </li>
+                <li> <a href="tenants.html"> TENANTS</a> </li>
+                <li> <a href="contact.html"> CONTACT & INFO </a> </li>
+            </ul>
+            
+        </nav>
+        
+        <nav class="mobile_Menu hidden-mobile">
+            
+            <div class="hamMenu_icon" onclick="toggleNav()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            
+            <img class="bmLogo" src="img/biscuitMill.png" width="150px">
+            
+            <div class="fbIcon"></div>
+            <div class="instaIcon"></div>
+            <div class="youtubeIcon"></div>
+            
+        </nav>
+        
+         <div class="hamMenu hidden-mobile"> 
+
+            <nav>
+                <center>
+                
+                    <h3> Navigation </h3>
+
+                    <ul>
+                        <li class="activeLink"> <a> Home </a> </li>
+                        <li> <a href="tenants.html"> Tenants </a> </li>
+                        <li> <a href="contact.html"> Contact & Info </a> </li>
+                    </ul>
+                
+                </center>
+            </nav>
+             
+                <center>
+                        <h3> Sign Up </h3>
+                        
+                        <p> Sign up for our newsletter to get the latest updates and news. Everything from events to the hottest foods. </p>
+                        
+                        
+                        <input class="emailText" type="email" placeholder="Insert Email">
+                        
+                        <input value="SIGN UP!" class="emailButton">
+                    
+                    
+                        
+             </center>
+             
+             <center>
+                        <h3>Find Us</h3>
+                        
+                        <p>The Old Biscuit Mill 373-375 Albert Road, Woodstock, Cape Town</p>
+                        
+                        
+                        <p>Mail: PO Box 12449, Mill Street, Cape Town, 8010</p>
+                        
+        
+                        
+             </center>
+        
+        </div>
+        
+        
+    </header>
+    
+    <body>  
+        
+        <div class="headImage">
+            
+            <center>
+            
+            <img class="biscuitMill_logo" src="img/biscuitMill.png">
+                <form action="tenants.html" method="get">
+                    <input class="headButton" type="submit" value="WHO'S INSIDE">
+                </form>    
+                
+            </center>
+        </div>
+        
+        <br>
+        
+        <h2> About Us </h2>
+    
+        <hr>
+        
+        <center>
+            
+        <div class="aboutContainer"> 
+            
+           <div class="aboutImage1">
+                <div class="foodHover about_Icon"> </div>
+            </div>
+            <center>
+            <h3> Local Foods </h3>
+                
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula ultricies sem, at varius eros mattis eget. Cras dui risus, dictum at mi vel, pharetra pellentesque tortor. Suspendisse condimentum nisl lacus, blandit lobortis velit luctus vehicula</p>    
+                
+            </center>
+            
+        </div>
+            
+        <div class="aboutContainer"> 
+            
+            <div class="aboutImage2">
+            <div class="marketHover about_Icon"> </div>
+            </div>
+            <center>
+            <h3> Markets and Shops </h3>
+                
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula ultricies sem, at varius eros mattis eget. Cras dui risus, dictum at mi vel, pharetra pellentesque tortor. Suspendisse condimentum nisl lacus, blandit lobortis velit luctus vehicula</p>    
+                
+            </center>
+            
+        </div>
+            
+        <div class="aboutContainer"> 
+            
+            <div class="aboutImage3">
+            <div class="placesHover about_Icon"> </div>
+            </div>
+            <center>
+            <h3> Amazing Places</h3>
+                
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula ultricies sem, at varius eros mattis eget. Cras dui risus, dictum at mi vel, pharetra pellentesque tortor. Suspendisse condimentum nisl lacus, blandit lobortis velit luctus vehicula</p>    
+                
+            </center>
+            
+        </div>
+        
+        </center>
+        
+        
+    <script>
+        
+        
+        var hamMenu = document.getElementsByClassName('hamMenu') [0];
+        var hamIcn = document.getElementsByClassName('hamMenu_icon') [0];
+        
+        var toggleBool = false;
+        
+        function toggleNav() {
+            
+            if (toggleBool === false) {
+                OpenNav();
+                
+            }else if (toggleBool == true) {
+                CloseNav();
+            }
+        }
+        
+        function OpenNav() {
+            hamMenu.style.width = "50%";
+            hamIcn.style.transform = "rotate(90deg)";
+            toggleBool = true;
+           
+        }
+        
+        function CloseNav() {
+            hamMenu.style.width = "0%";
+            hamIcn.style.transform = "rotate(0deg)";
+            toggleBool = false;
+
+    
+        }
+        
+        
+        
+    </script>    
+        
+    </body>
+
+    <footer>
+        
+        <div class="infoContainer"> 
+                
+                <div class="info_column">
+                    <center><h3> Navigation</h3></center>
+                    <h4> <a href="index.html"> Home</a></h4>
+                    <h4> <a href="tenants.html"> Tenants</a></h4>
+                    <h4> <a href="contact.html"> Contact & Info</a></h4>
+                </div>
+                
+                <div class=" socialMedia_column info_column">
+                    <center>
+                        
+                        <h3> Social Media </h3>
+                        
+                        <div class="fbIcon"></div>
+
+                        <div class="instaIcon">
+                        </div>
+
+                        <div class="youtubeIcon"></div>
+                    </center>
+                </div>
+                
+                <div class="info_column">
+                    
+                    <center>
+                        <h3>Find Us</h3>
+                        
+                        <p>The Old Biscuit Mill 373-375 Albert Road, Woodstock, Cape Town</p>
+                        
+                        
+                        <p>Mail: PO Box 12449, Mill Street, Cape Town, 8010</p>
+                        
+                        <input class="findUs_button" type="submit" value="Contact Page">
+                        
+                    </center>
+                    
+                </div>
+            
+                <div class="info_column wide_column ">
+                    <center>
+                        <h3> Sign Up </h3>
+                        
+                        <p> Sign up for our newsletter to get the latest updates and news. Everything from events to the hottest foods. </p>
+                        
+                        
+                        <input class="emailText" type="email" placeholder="Insert Email">
+                        
+                        <input value="SIGN UP!" class="emailButton">
+                        
+                    </center>
+                </div>
+                
+    
+            
+        </div>
+        
+        <div class="bottom"> <center></center> </div>
+        
+    </footer>
+    
+</html>
