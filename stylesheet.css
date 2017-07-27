@@ -583,7 +583,51 @@ h3 {
     border-bottom: 7px solid orange;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+    
+    .desktop_Menu ul li {
+        font-size: 1.7em;
+    }
+    
+    .headButton {
+        position: relative;
+        top: 20vw;
+        font-size: 40px;
+        height: 160px;
+        width: 500px;
+    }
+    
+    .aboutContainer {
+        display: block;
+        width: 65vw;
+        margin: 50px;
+    }
+
+    
+    .aboutContainer h3 {
+        font-size: 4em;
+    }
+    
+    .aboutContainer p {
+        font-size: 1.3em;
+    }
+    
+    .tenantContainer {
+        width: 40vw;
+        height: 32vh;
+    }
+    
+    .tenantContainer p {
+        font-size: 4.2em;
+    }
+    
+    .contact_infoContainer {
+        height: 43vh;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
     
     /* Mobile Menu --------- Start */
 
@@ -632,8 +676,10 @@ h3 {
     
     
     .bmLogo {
+        width: 30vw;
+        height: 10vh;
         margin: 0;
-        padding: 0;
+        padding: 5px 1px;
         position: absolute;
         left: 35vw;
     }
