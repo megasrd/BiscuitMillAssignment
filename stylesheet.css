@@ -771,7 +771,7 @@ h3 {
     /* Tenants Mobile ----------- Start */
     
     .tenant_topImage {
-        height: 330px;
+        height: 220px;
         background-image: url(img/tenants_topImage.jpg);
         border-bottom: 7px solid orange;
     }
@@ -779,7 +779,9 @@ h3 {
     .tenant_topImage p {
         color: white;
         font-family: valentine;
-        font-size: 250px;
+        position: relative;
+        top: 0.5em;
+        font-size: 8.5em;
         display: inline;
     }
 
@@ -788,11 +790,11 @@ h3 {
         box-shadow: 1px 1px 10px #888888;
         border-radius: 3px;
         overflow: hidden;
-        display: inline-block;
-        width: 40vw;
+        display: block;
+        width: 80vw;
         height: 430px;
         /*margin: 10px 30px;*/
-        margin: 1% 0.5%;
+        margin: 5% 0.5%;
     }
 
     .tenantImage {
@@ -807,7 +809,7 @@ h3 {
 
     .tenantContainer p {
         color: #333;
-        font-size: 5vw;
+        font-size: 10vw;
         font-family: noodle;
         margin: 10px 0px;
 
@@ -819,30 +821,35 @@ h3 {
     /* Contact & Info Mobile --------- Start */ 
     
     .contact_topImage {
-        position: relative;
-        top: 70px;
         height: 220px
     }
     
     .contact_topImage p {
+        position: relative;
+        top: 0.5em;
         font-size: 8.5em;
     }
   
     .contact_infoContainer {
-        position: relative;
-        top: 70px;
+        display: flex;
+        flex-wrap: wrap;
         text-align: center;
         
     }
 
     .contact_infoText {
-        padding: 5px;
+        padding: 0px 10px 0px 10px;
         display: block;
         width: 100%;
         float: none;
     }
+    
+    .contact_infoText p {
+        font-size: 0.65em;
+    }
 
     #gMap {
+        
         height: 350px;
         float: none;
         display: block;
