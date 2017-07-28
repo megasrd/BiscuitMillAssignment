@@ -4,6 +4,7 @@
     
 <head> <title> The Old Biscuit Mill </title> 
 <link href="stylesheet.css" rel="stylesheet">
+<link href="gridsys.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
@@ -11,7 +12,7 @@
     
     <header>
         
-        <nav class="desktop_Menu hidden-desktop">
+        <nav class="desktop_Menu col-full-width hidden-desktop">
 
             <ul>
                 <li class="activeLink"> <a> HOME </a> </li>
@@ -21,7 +22,7 @@
             
         </nav>
         
-        <nav class="mobile_Menu hidden-mobile">
+        <nav class="mobile_Menu col-full-width hidden-mobile">
             
             <div class="hamMenu_icon" onclick="toggleNav()">
                 <div></div>
@@ -67,28 +68,38 @@
     
     <body>  
 
-        <div class="headImage">
+        <div class="headImage col-full-width">
             
             <center>
                 
+            <div class="bmLogo-mobile hidden-mobile"> </div>
+                
             <img class="biscuitMill_logo" src="img/biscuitMill.png">
+                
                 <form action="tenants.html" method="get">
                     <input class="headButton" type="submit" value="WHO'S INSIDE">
-                </form>    
+                </form>
+                
+                <a name="about"></a> 
+                <a href="#about" class= "down-button"> </a>
                 
             </center>
-            
+               
         </div>
         
-        <br>
         
-        <h2> About Us </h2>
-    
+        
+        
+        
         <hr>
         
+        <h2> About Us </h2>
+        
+        <hr>    
+    
         <center>
             
-        <div class="aboutContainer"> 
+        <div class="aboutContainer col-fourth-width "> 
             
            <div class="aboutImage1">
                 <div class="foodHover about_Icon"> </div>
@@ -102,7 +113,7 @@
             
         </div>
             
-        <div class="aboutContainer"> 
+        <div class="aboutContainer col-fourth-width "> 
             
             <div class="aboutImage2">
             <div class="marketHover about_Icon"> </div>
@@ -116,7 +127,7 @@
             
         </div>
             
-        <div class="aboutContainer"> 
+        <div class="aboutContainer col-fourth-width "> 
             
             <div class="aboutImage3">
             <div class="placesHover about_Icon"> </div>
@@ -174,9 +185,9 @@
 
     <footer>
         
-        <div class="infoContainer"> 
+        <div class="infoContainer col-full-width"> 
                 
-                <div class="info_column">
+                <div class="info_column tablet-hidden">
                     <center><h3> Navigation</h3></center>
                     <h4> <a href="index.html"> Home</a></h4>
                     <h4> <a href="tenants.html"> Tenants</a></h4>
