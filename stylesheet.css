@@ -17,6 +17,11 @@ a{
     display: none;
 }
 
+
+html {
+    width: 100%;
+}
+
 body {
     margin: 0;
     background-image: url(img/bgImage.png);
@@ -28,7 +33,7 @@ header {
 
 hr {
     height: 10px;
-    margin: 10px 0px 50px 0px;
+    margin: 10px 0px 10px 0px;
     background-color: orange;
 }
 
@@ -64,15 +69,16 @@ h3 {
 }
 
 .desktop_Menu  ul li {
+    margin-left: 2em;
+    padding: 1em 4em;
     border-bottom: 5px solid transparent;
     display: inline-block;
-    padding: 19px;
-    margin-right: 50px;
     font-family: 'Questrial', sans-serif;
     transition: border-bottom 0.1s;
 }
 
 .desktop_Menu  ul li a {
+    font-size: 1em;
     text-decoration: none;
     color: white;
 }
@@ -86,6 +92,8 @@ h3 {
 }
 
 .headImage {
+    margin: 0;
+    padding: 0;
     height: 92vh;
     background-image: url(img/Head%20Image.jpg);
     background-size: cover;
@@ -136,10 +144,7 @@ h3 {
 .aboutContainer {
     box-shadow: 1px 1px 10px #888888;
     overflow: hidden;
-    padding: 0 auto;
-    display: inline-block;
     border-radius: 5px;
-    width: 350px;
     height: 430px;
     background-color: white;
     margin: 0px 20px 120px 20px;
@@ -159,8 +164,8 @@ h3 {
 
 .about_Icon {
     display: inline-block;
-    width: 40%;
-    height: 130px;
+    width: 100px;
+    height: 100px;
     margin: 30px 0px 10px 0px;
 }
 
@@ -216,7 +221,7 @@ h3 {
     border-bottom: 7px solid orange;
 }
 
-.tenant_topImage p {
+.tenant_topImage p {    
     color: white;
     font-family: valentine;
     font-size: 340px;
@@ -229,7 +234,6 @@ h3 {
     border-radius: 3px;
     overflow: hidden;
     display: inline-block;
-    width: 18vw;
     height: 430px;
     /*margin: 10px 30px;*/
     margin: 1% 1.5%;
@@ -268,7 +272,6 @@ h3 {
 }
 
 .contact_infoContainer {
-    width: 100%;
     overflow: hidden;
     background-color: #555;
     border-bottom: 10px solid orange;
@@ -290,11 +293,9 @@ h3 {
     font-family: 'Questrial', sans-serif;
 }
 
-#gMap {
+.gMap {
     float: left;
     height: 60vh;
-    width: 55%;
-    display: inline-block;
     background-color: darkred;
 }
 
@@ -310,8 +311,9 @@ h3 {
 
 
 .contactForm_container {
+    padding: 20px 0px;
     background-color: white;
-    padding: 50px;
+    
     
 }
 
@@ -376,11 +378,11 @@ h3 {
 .bottom {
     background-color: #111;
     height: 20px;
+    width: 100%;
 }
 
 /*Footer Section */
 .infoContainer {
-    padding: 10px;
     background-color: #222;
 }
 
@@ -455,10 +457,6 @@ h3 {
     height: 250px;
     border-right: 1px solid white;
     margin: 1% 0px 0px 0.5%;
-}
-
-.wide_column {
-    width: 28%;
 }
 
 .info_column p {
@@ -583,23 +581,40 @@ h3 {
     border-bottom: 7px solid orange;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+    
+    .about_Icon {
+        width: 35%;
+    }
+    
+    .tablet-hidden {
+        display: none;
+    }
+    
+    .info_column {
+        width: 30%;
+    }
+    
+    .info_column .emailText {
+        width: 90%;
+        margin-bottom: 1em;
+    }
     
     .desktop_Menu ul li {
-        font-size: 1.7em;
+        font-size: 1.2em;
     }
     
     .headButton {
         position: relative;
-        top: 20vw;
+        bottom: 1vh;
         font-size: 40px;
         height: 160px;
         width: 500px;
     }
     
     .aboutContainer {
-        display: block;
-        width: 65vw;
+        display: block; 
+        height: 35vh;
         margin: 50px;
     }
 
@@ -609,28 +624,80 @@ h3 {
     }
     
     .aboutContainer p {
-        font-size: 1.3em;
+        font-size: 130%;
     }
     
     .tenantContainer {
-        width: 40vw;
-        height: 32vh;
+        height: 30vh;
     }
     
     .tenantContainer p {
-        font-size: 4.2em;
+        font-size: 350%;
     }
     
     .contact_infoContainer {
-        height: 43vh;
+        height: 48vh;
     }
+    
+    .contact_infoText {
+        padding: 0;
+        width: 50%;
+        height: 100%;
+    }
+    
+    .contact_infoText p {
+        font-size: 72%;
+        text-align: center;
+    }
+    
+    
+    
+    .infoContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    
 
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (min-width: 320px) and (max-width: 425px) {
     
     /* Mobile Menu --------- Start */
+    
+    .down-button {
+        position: relative;
+        top: 79vh;
+        display: inline-block;
+        background-image: url(img/mobile-downarrow.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 9vh;
+        width: 30vw;
+        opacity: 0.9;
+    }
+    
+    .headButton {
+        position: relative;
+        top: 75vh;
+    }
 
+    .bmLogo-mobile {
+        position: absolute;
+        top: 11vh;
+        left: 20vw;
+        display: inline-block;
+        background-image: url(img/oldbiscuitmill_logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 35vh;
+        width: 60vw;
+    }
+    
+    .about_Icon {
+        width: 35%;
+        
+    }
     
     .headImage {
         width: inherit;
@@ -641,10 +708,7 @@ h3 {
         display: none;
     }
     
-    .headButton {
-        position: relative;
-        top: 85vh;
-    }
+    
     
     
     .hidden-desktop {
@@ -783,10 +847,6 @@ h3 {
         margin: 0;
     }
 
-    .aboutIcon {
-        
-    }
-    
     .aboutContainer {
         padding: 0 auto;
         display: block;
@@ -798,18 +858,12 @@ h3 {
     }
     
     .aboutContainer h3 {
-        font-size: 3.2em;
+        font-size: 2em;
     }
     
     .aboutContainer p {
         font-size: 0.9em;
         margin: 10px;
-    }
-    
-    .about_Icon {
-        margin: 2.5% 1%;
-        width: 25%;
-        height: 80%;
     }
     
     /* Main Mobile Menu --------- End */
@@ -837,7 +891,6 @@ h3 {
         border-radius: 3px;
         overflow: hidden;
         display: block;
-        width: 80vw;
         height: 430px;
         /*margin: 10px 30px;*/
         margin: 5% 0.5%;
@@ -876,34 +929,25 @@ h3 {
         font-size: 8.5em;
     }
   
-    .contact_infoContainer {
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-        
-    }
-
     .contact_infoText {
+        text-align: center;
         padding: 0px 10px 0px 10px;
         display: block;
-        width: 100%;
         float: none;
     }
     
     .contact_infoText p {
         font-size: 0.65em;
+        margin: 0 auto;
     }
 
-    #gMap {
-        
+    .gMap {
         height: 350px;
         float: none;
         display: block;
-        width: 100%;
     } 
     
     .contactForm_container {
-        padding: 10px;
         position: relative;
         top: 70px;
     }
