@@ -666,8 +666,9 @@ h3 {
     /* Mobile Menu --------- Start */
     
     .down-button {
-        position: relative;
-        top: 530px;
+        position: absolute;
+        top: 85vh;
+        left: 35vw;
         display: inline-block;
         background-image: url(img/mobile-downarrow.png);
         background-size: contain;
@@ -678,13 +679,14 @@ h3 {
     }
     
     .headButton {
-        position: relative;
-        top: 500px;
+        position: absolute;
+        top: 70vh;
+        left: 16vw;
     }
 
     .bmLogo-mobile {
         position: absolute;
-        top: 11vh;
+        top: 18vh;
         left: 20vw;
         display: inline-block;
         background-image: url(img/oldbiscuitmill_logo.png);
