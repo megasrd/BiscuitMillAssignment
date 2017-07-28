@@ -4,6 +4,7 @@
     
 <head> <title> The Old Biscuit Mill </title> 
 <link href="stylesheet.css" rel="stylesheet">
+<link href="gridsys.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
@@ -11,7 +12,7 @@
     
     <header>
         
-        <nav class="desktop_Menu hidden-desktop">
+        <nav class="desktop_Menu col-full-width  hidden-desktop">
 
             <ul>
                 <li> <a href="index.html"> HOME </a> </li>
@@ -21,7 +22,7 @@
             
         </nav>
         
-        <nav class="mobile_Menu hidden-mobile">
+        <nav class="mobile_Menu col-full-width hidden-mobile">
             
             <div class="hamMenu_icon" onclick="toggleNav()">
                 <div></div>
@@ -81,16 +82,16 @@
     
     <body>  
         
-        <div class="contact_topImage">
+        <div class="contact_topImage col-full-width">
             <center>
                 <p> Information </p>
             </center>
         </div>
         
         
-        <div class="contact_infoContainer"> 
+        <div class="contact_infoContainer col-full-width"> 
         
-            <div class="contact_infoText">  
+            <div class="contact_infoText col-half-width">  
 
                 
 
@@ -116,13 +117,15 @@
                 
                 </div>
             
-            <div id="gMap"></div>
+                <div class="gMap col-half-width"></div>
+            
+            
             </div>
     
 
-            <div class="contactForm_container">
+            <div class="contactForm_container col-full-width ">
                 <center>
-                <form class="contactForm">
+                <form class="contactForm col-half-width">
                     
                 <h3>Contact Us</h3>
                 
@@ -180,7 +183,7 @@
         }
         
         function myMap() {
-            var mapCanvas = document.getElementById("gMap");
+            var mapCanvas = document.getElementsByClassName("gMap")[0];
             
             var mapOptions = {
                 center: new google.maps.LatLng(-33.924869, 18.424055),
@@ -198,7 +201,7 @@
 
     <footer>
         
-        <div class="infoContainer"> 
+        <div class="infoContainer col-full-width"> 
                 
                 <div class="info_column">
                     <center><h3> Navigation</h3></center>
@@ -221,7 +224,7 @@
                     </center>
                 </div>
                 
-                <div class="info_column">
+                <div class="info_column tablet-hidden">
                     
                     <center>
                         <h3>Find Us</h3>
