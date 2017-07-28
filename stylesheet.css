@@ -666,9 +666,8 @@ h3 {
     /* Mobile Menu --------- Start */
     
     .down-button {
-        position: absolute;
-        top: 90vh;
-        left: 35vw;
+        position: relative;
+        top: 530px;
         display: inline-block;
         background-image: url(img/mobile-downarrow.png);
         background-size: contain;
@@ -680,7 +679,7 @@ h3 {
     
     .headButton {
         position: relative;
-        top: 75vh;
+        top: 500px;
     }
 
     .bmLogo-mobile {
