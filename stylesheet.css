@@ -666,8 +666,9 @@ h3 {
     /* Mobile Menu --------- Start */
     
     .down-button {
-        position: relative;
-        top: 79vh;
+        position: absolute;
+        top: 90vh;
+        left: 35vw;
         display: inline-block;
         background-image: url(img/mobile-downarrow.png);
         background-size: contain;
