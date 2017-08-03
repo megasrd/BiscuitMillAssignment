@@ -285,10 +285,7 @@ h3 {
 
 .contact_infoText {
     float: left;
-    padding-left: 2%;
     height: 60vh;
-    display: inline-block;
-    width: 43%;
     background-color: white;
     font-family: 'Questrial', sans-serif;
 }
@@ -300,7 +297,8 @@ h3 {
 }
 
 .contact_infoText p {
-    font-size: 14px;
+    text-align: center;
+    font-size: 12px;
     font-family: sans-serif;
 }
 
@@ -710,8 +708,7 @@ h3 {
         display: none;
     }
     
-    
-    
+
     
     .hidden-desktop {
         display: none;
